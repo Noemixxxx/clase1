@@ -1,20 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-import { headerApp } from './components/HeaderApp';
-import { LisProducts } from './components/LisProducts';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+import { HeaderApp } from "./components/HeaderApp";
+import { ListProducts } from "./components/Products/ListProducts";
+import { AlertProduct } from './components/Products/AlertProduct';
 
 const App = () => {
   return (
-    <container>
+    <>
+    <HeaderApp/>
+    <Container>
 <div className="App">
-   <headerApp />
-   <LisProducts />
+  <AlertProduct />
+   <HeaderApp />
+   <ListProducts />
     </div>
-    </container>
-    
+    </Container>
+    </>
   );
-}
+};
 
 export default App;
+
